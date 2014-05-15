@@ -1,0 +1,23 @@
+Shih-Hao Chen; Shi-Huang Chen; Guido, R.C., "Music Genre Classification Algorithm Based on Dynamic Frame Analysis and Support Vector Machine," Multimedia (ISM), 2010 IEEE International Symposium on , vol., no., pp.357,361, 13-15 Dec. 2010
+
+Lisboa de Almeida, P.R.; de Souza Britto, A.; da Silva Junior, E.J.; Soares de Oliveira, L.E.; Montes Celinski, T.; Koerich, A.L., "Music genre classification using dynamic selection of ensemble of classifiers," Systems, Man, and Cybernetics (SMC), 2012 IEEE International Conference on , vol., no., pp.2700,2705, 14-17 Oct. 2012
+
+Arabi, A.F.; Guojun Lu, "Enhanced polyphonic music genre classification using high level features," Signal and Image Processing Applications (ICSIPA), 2009 IEEE International Conference on , vol., no., pp.101,106, 18-19 Nov. 2009
+
+Balti, H.; Frigui, H., "Feature Mapping and Fusion for Music Genre Classification," Machine Learning and Applications (ICMLA), 2012 11th International Conference on , vol.1, no., pp.306,310, 12-15 Dec. 2012
+doi: 10.1109/ICMLA.2012.59
+
+Ariyaratne, H.B.; Dengsheng Zhang, "A Novel Automatic Hierachical Approach to Music Genre Classification," Multimedia and Expo Workshops (ICMEW), 2012 IEEE International Conference on , vol., no., pp.564,569, 9-13 July 2012
+
+Jia-Min Ren; Jang, J.R., "Discovering Time-Constrained Sequential Patterns for Music Genre Classification," Audio, Speech, and Language Processing, IEEE Transactions on , vol.20, no.4, pp.1134,1144, May 2012
+doi: 10.1109/TASL.2011.2172426
+
+Costa, Y.M.G.; Oliveira, L.; Koerich, A.L.; Gouyon, F., "Comparing textural features for music genre classification," Neural Networks (IJCNN), The 2012 International Joint Conference on , vol., no., pp.1,6, 10-15 June 2012
+
+Costa, Y.; Oliveira, L.; Koerich, A.; Gouyon, F., "Music genre recognition based on visual features with dynamic ensemble of classifiers selection," Systems, Signals and Image Processing (IWSSIP), 2013 20th International Conference on , vol., no., pp.55,58, 7-9 July 2013
+
+Yaslan, Y.; Cataltepe, Z., "Audio Music Genre Classification Using Different Classifiers and Feature Selection Methods," Pattern Recognition, 2006. ICPR 2006. 18th International Conference on , vol.2, no., pp.573,576, 0-0 0
+
+Nayak, S.; Bhutani, A., "Music Genre Classification Using GA-Induced Minimal Feature-Set," Computer Vision, Pattern Recognition, Image Processing and Graphics (NCVPRIPG), 2011 Third National Conference on , vol., no., pp.33,36, 15-17 Dec. 2011
+
+Nagathil, A.; Gottel, P.; Martin, R., "Hierarchical audio classification using cepstral modulation ratio regressions based on Legendre polynomials," Acoustics, Speech and Signal Processing (ICASSP), 2011 IEEE International Conference on , vol., no., pp.2216,2219, 22-27 May 2011

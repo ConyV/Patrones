@@ -1,0 +1,127 @@
+Ariyaratne, H.B.; Dengsheng Zhang, "A Novel Automatic Hierachical Approach to Music Genre Classification," 
+Multimedia and Expo Workshops (ICMEW), 2012 IEEE International Conference on , vol., no., pp.564,569, 9-13 July 2012
+
+step-by-step (divide and 
+conquer) hierarchical classification approach. In which the problem 
+is divided into several smaller and simpler classification tasks.
+Decision Tree (DT) is a machine learning algorithm which tries 
+to solve a classification task by adopting a divide and conquer 
+approach. 
+Multivariate DTs with linear discriminative analysis (LDA)
+
+The statistical properties of each feature’s mean, 
+covariance, and their numerical partial derivatives (the differences 
+between successive elements of the feature vector) constituted a 183 
+dimensional feature vector. 
+
+Feature Name No.of featu
+1.  Total Energy  4 
+2.  Fundamental Frequency  4 
+3.  Loudness Sensation  32 
+4.  Integral Loudness  4 
+5.  Audio Spectral Centroid  4 
+6.  Spectral Rolloff  4 
+7.  Audio Spectrum Spread  4 
+8.  Audio Spectrum Flatness  16 
+9.  Audio auto correlation  13 
+10. Log Attack Time  1 
+11. Temporal Centroid  1 
+12. Zero Crossing Rate  4 
+13. Mel Frequency Cepstral Coefficients  96 
+Total 183
+
+Yaslan, Y.; Cataltepe, Z., "Audio Music Genre Classification Using Different Classifiers and Feature Selection Methods,"
+Pattern Recognition, 2006. ICPR 2006. 18th International Conference on , vol.2, no., pp.573,576, 0-0 0
+
+
+Feature set
+• BEAT: Beat related, 6 features.
+• STFT: Short-Time Fourier Transform, 9
+features.
+• MFCC: Mel-Frequency Cepstral
+Coefficients, 10 features.
+• MPITCH: Pitch related, 5 features.
+• All: All features above, 30 features.
+
+We experimented with 10 different classifiers,
+namely: Fisher (Fisher classifier), LDC (Linear
+classifier assuming normal densities with equal
+covariance matrices), QDC (Quadratic classifier
+assuming normal densities), UDC (Quadratic
+classifier assuming normal uncorrelated densities),
+NBC (Naïve Bayes Classifier), PDC (Parzen Density
+Based Classifier), KNN(Knearest neighbor with
+optimal k computed using leave one out cross
+validation), KNN1 (1 nearest neighbor), KNN3 (3
+nearest neighbor), KNN5 (5 nearest neighbor) [12].
+
+In short, the classifier complexity plays an
+important role in how many features result in the best
+test classification accuracy. 
+
+MFCC features are
+selected by all classifiers,
+
+he classification performance
+of Parzendc, KNN(opt) and QDC increases to 80%
+when using all 30 features after applying PCA
+transform.
+
+
+Jia-Min Ren; Jang, J.R., "Discovering Time-Constrained Sequential Patterns for Music Genre Classification," 
+Audio, Speech, and Language Processing, IEEE Transactions on , vol.20, no.4, pp.1134,1144, May 2012
+doi: 10.1109/TASL.2011.2172426
+
+ time-constrained sequential patterns (TSPs) for music genre classification. 
+
+representing each music piece as the weighted occurrence
+frequencies of all the mined TSPs, linear SVM classifiers are
+employed to facilitate the classification task. From the analysis of TSPs’ 
+lengths and counts, we found that TSPs with different lengths/counts can be used to capture the characteristics
+of specific genres. 
+
+Therefore, we further derive a genre-specific
+time gap based on the distribution of token durations of a specific genre for mining genre-specific TSPs. Next, we compute
+the feature vector of a music piece as the occurrence frequency
+of each mined TSP since these mined TSPs can be used to
+represent genre-specific characteristics (Section III-C). Finally,
+each feature vector is weighted by its TSP length and the TSP’s
+probability within each genre, and then all the weighted vectors
+are fed to linear SVMs for training classifiers 
+
+II. ACOUSTIC UNITS BASED MUSIC TRANSCRIPTS
+ Therefore, based on an unsupervised language identification approach [32], we train a vocabulary of acoustic units
+to model universal sound events, such that a given music piece
+can be tokenized into a sequence of acoustic units.
+
+Arabi, A.F.; Guojun Lu, "Enhanced polyphonic music genre classification using high level features," 
+Signal and Image Processing Applications (ICSIPA), 2009 IEEE International Conference on , vol., no., pp.101,106, 18-19 Nov. 2009
+
+To  capture  the  chord  information  we  have  counted the 
+number of roots and modes of the chords present in  songs. 
+And  for  chord  progressions  we  had  developed  a  pattern 
+matching  algorithm  called  ChordMiner  that  predicts  the 
+likelihood  of  songs  belonging  to  different  genres.  This 
+algorithm  captures  and  summarizes  the  chord  progression 
+information to a format that  can  be  used in conjunction  of 
+other features as an input to data mining algorithms
+
+A. Rhythmic Features
+Rhythmic features are related to music tempo (beat rate).
+Chord Occurrence Features
+hord Progression Features
+A  chord  progression  is  a  sequence  of  chords  played  in  a 
+row.  The  length  and  the  number  of  chord  progressions  in 
+music  pieces  vary. 
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+http://www.unf.edu/~c.chuan/cis4930/MIR_databases.pdf
+
+http://grh.mur.at/sites/default/files/mir_datasets_0.html
+
+http://www.music-ir.org/?q=node/6
+
+http://www.music-ir.org/mirex/wiki/2009:Main_Page
+
+http://ismir2004.ismir.net/ISMIR_Contest.html
+
+http://labrosa.ee.columbia.edu/projects/musicsim/uspop2002.html
+
+Links Directos
+
+http://www-ai.cs.uni-dortmund.de/audio.html
+
+http://marsyas.info/download/data_sets/  *******
+
+http://labrosa.ee.columbia.edu/millionsong/
+
+http://ismir2004.ismir.net/genre_contest/#genre

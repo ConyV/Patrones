@@ -1,0 +1,81 @@
+Shih-Hao Chen; Shi-Huang Chen; Guido, R.C., "Music Genre Classification Algorithm Based on Dynamic Frame Analysis and Support Vector Machine," Multimedia (ISM), 2010 IEEE International Symposium on , vol., no., pp.357,361, 13-15 Dec. 2010
+
+IDEA PRINCIPAL: ESCOGER BUENAS FEATURES.
+
+->FEATURES: Mel Frequency Cepstral Coefficients
+	La escala de mel fue creada en base a estudios sicológicos sobre percepción de frecuencias.
+     	Consiste en tomar una ventana de audio (enfatizada con una ventana Hamming), calcular la transformada de Fourier discreta y aplicarle un banco de filtros pasabanda triangulares de Mel. Al vectores de resultados para cada filtro se le aplica la función logaritmo natural y se le calcula la transformada Discreta de Fourier, obteniendo un vector de features.
+
+->FEATURES: Logaritmo de la energía.
+     	Calculado para una ventana.
+
+->CLASSIFIER: Support Vector Machine con Kernel Exponencial. 
+	Muy buenos resultados
+
+
+Nayak, S.; Bhutani, A., "Music Genre Classification Using GA-Induced Minimal Feature-Set," Computer Vision, Pattern Recognition, Image Processing and Graphics (NCVPRIPG), 2011 Third National Conference on , vol., no., pp.33,36, 15-17 Dec. 2011
+
+IDEA PRINCIPAL: HALLAR LAS MINIMAS FEATURES NECESARIAS.
+
+->FEATURES: Nada que destacar, los toman de otro lado.
+
+->METHOD: Ocupan un algoritmo genético para seleccionar los features mas relevantes y reducir el espacio de trabajo increíblemente.
+
+->CLASSIFIER: SVM con Kernel Lineal y KNN5. 
+	No muy buenos resultados, por los features, mas sí por las disminución de espacio.
+
+
+Lisboa de Almeida, P.R.; de Souza Britto, A.; da Silva Junior, E.J.; Soares de Oliveira, L.E.; Montes Celinski, T.; Koerich, A.L., "Music genre classification using dynamic selection of ensemble of classifiers," Systems, Man, and Cybernetics (SMC), 2012 IEEE International Conference on , vol., no., pp.2700,2705, 14-17 Oct. 2012
+
+IDEA PRINCIPAL: HALLAR UN BUEN CLASIFICADOR COMBINANDO SIMPLES POR PONDERACION.
+
+->FEATURES: Ocupan un conjunto amplio de características para melodía, harmonía, ritmos, y timbres. Estos son: 	Timbral Features
+	Spectral Features
+	Mel Frequency Cepstral Coefficientes
+	Chroma
+	Spectral Centroid
+	Rolloff
+	Spectral Flux
+	Zero Crossings
+	Spectral Flatness Measure
+	Spectral Crest Factor
+	Line Spectral Pair
+	Linear Prediction Cepstral Coefficients
+	Stereo Panning Spectrum
+
+->CLASIFICADOR: 
+	Arman variados clasificadores KNN1 mezclando distintas features, tamaños de ventana y salto entre ventanas. Se genera un conjunto de vectores de validacion para cada muestra que indica los K vecinos más cercanos esperados y se clasifica esta prueba con todos los clasificadores.
+	Se genera un grupo de KE -> los clasificadores que clasificaron los K vecinos bien y un grupo de KU - > los clasificadores que clasificaron al menos un vecino bien.
+	Todos aquellos clasificados que sobrevivan la prueba son colocamos en un conjunto de clasificadores, ensemble, final. Este da como resultado una suma ponderada por votos de cada clasificador, según su clasificación inicial en el experimento KE y KU.
+	Los resultados no son muy buenos, posiblemente de nuevo a causa de las features escogidas.
+
+
+Nagathil, A.; Gottel, P.; Martin, R., "Hierarchical audio classification using cepstral modulation ratio regressions based on Legendre polynomials," Acoustics, Speech and Signal Processing (ICASSP), 2011 IEEE International Conference on , vol., no., pp.2216,2219, 22-27 May 2011
+
+IDEA PRINCIPAL: ANALISIS CON FEATURES DE CEPSTROSUM (ocupan hartas clases!)
+
+->FEATURES: Obtienen el cepstrosum de una señal en una ventana (sacan Fourier, luego logaritmo natural y luego inverso de Fourier) y se analizan ventanas del resultante vector obteniendo las medias.
+	Aproximan los resultados anteriores con razones de modulación al dividir cada cepstrosum por la frequencia DC en el ancho de banda. No contentos con ello, lo anterior lo parametrizan con polinomios de Legendre, complicanel resultado pero de alguna forma haciéndoles fácil computar cada feature.
+
+->CLASSIFIER: LDA con un modelo multivariable gaussiano (lo usual). Obtienen buenos resultados para separación de voz y clasificación de fuentes de sonido, pero no tanto para distintos géneros musicales (61%).
+
+
+Balti, H.; Frigui, H., "Feature Mapping and Fusion for Music Genre Classification," Machine Learning and Applications (ICMLA), 2012 11th International Conference on , vol.1, no., pp.306,310, 12-15 Dec. 2012
+doi: 10.1109/ICMLA.2012.59
+
+IDEA PRINCIPAL: MAPEO DE FEATURES A HISTOGRAMAS REPRESENTATIVOS DE CADA CLASE
+(basado en Bag of Words)
+
+->FEATURES: Mel y dMel entre otras que no nombran.
+
+->METODO: 
+	Primero, se genera un prototipo representativo de features para cada clase mediante Clustering. (el representativo es el centro de masa del Cluster)
+	Luego, cada vector de features se mapea al espacio de estos clusters donde el nuevo vector indica en cada elemento el valor de la función de pertenencia asociada a cada Cluster. 
+	Como funcion de pertenencia ocupan un 0 o 1 dependiendo del cluster mas cercano, o, con lógica difusa, prueban unas funciones gaussianas. (Hard vs Soft assignment)
+	Ojo que se mapea por feature o por conjunto de features (tipo) y luego se concatena.
+
+->CLASSIFIER:
+	Ocupan KNN con distintas distancias: cosine, difussion, euclidean, etc. La mejor es la Difussion (sea lo que sea) y obtienen reusltados del 82%.
+
+
+
